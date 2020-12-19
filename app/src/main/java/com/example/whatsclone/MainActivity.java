@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     viewPager=findViewById(R.id.viewPager);
 
     toolbar=findViewById(R.id.myToolbar);
-    setSupportActionBar(toolbar);
+    //setSupportActionBar(toolbar);
 
     getSupportActionBar().setTitle("Whatsapp");
     viewPagerAdapter=new viewPagerAdapter(getSupportFragmentManager());
