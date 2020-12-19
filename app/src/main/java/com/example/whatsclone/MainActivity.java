@@ -1,6 +1,9 @@
 package com.example.whatsclone;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
@@ -32,5 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     viewPager.setAdapter(viewPagerAdapter);
 
+  }
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    MenuInflater menuInflater = getMenuInflater();
+    menuInflater.inflate(R.menu.menu,menu);
+    return true;
   }
 }
